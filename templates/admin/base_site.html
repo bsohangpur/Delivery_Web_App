@@ -1,0 +1,20 @@
+{% extends "admin/base.html" %}
+ 
+{% block title %}Delivery app admin{% endblock %}
+ 
+{% block branding %}
+<h1 id="site-name" ><a href="{% url 'admin:index' %}">Delivery App Admin Panel</a></h1>
+{% endblock %}
+
+{% block extrastyle %}{{ block.super }}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+#{
+font-family: 'Playfair Display', serif;
+
+}
+</style>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
